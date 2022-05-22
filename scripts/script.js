@@ -23,9 +23,9 @@ const updateValues = function(){
   const expense  = amounts.filter((amount) => amount < 0).reduce((acc,amount) => acc + amount, 0).toFixed(2);
   const total = amounts.reduce((acc,amount) => acc + amount ,0).toFixed(2);
 
-  moneyPlus.innerHTML = `${income}`;
-  moneyMinus.innerHTML = `${expense}`;
-  balance.innerHTML = `${total}`;
+  moneyPlus.innerHTML = `₹${income}`;
+  moneyMinus.innerHTML = `₹${expense}`;
+  balance.innerHTML = `₹${total}`;
 };
 
 
